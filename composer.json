@@ -48,6 +48,8 @@
       "@php -r \"unlink('composer.json');\"",
       "@php -r \"rename('composer.json.default', 'composer.json');\"",
       "@composer dump-autoload -o",
+      "./install-fusionary-packages.sh",
+      "@php craft plugin/install --all",
       "@php craft setup/welcome"
     ]
   }
