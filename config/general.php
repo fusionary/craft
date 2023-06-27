@@ -30,4 +30,10 @@ return GeneralConfig::create()
     ->aliases([
         '@webroot' => dirname(__DIR__) . '/web',
     ])
+    ->cpTrigger(App::env('CP_TRIGGER') ?? 'cp')
+    ->securityKey(App::env('SECURITY_KEY'))
+    ->extraAllowedFileExtensions(explode(";", App::env('EXTRA_ALLOWED_FILE_EXTENSIONS' ?? "")))
+    ->allowedGraphqlOrigins(explode(";", App::env('VALID_GRAPHQL_ORIGINS') ?? ""))
+    ->runQueueAutomatically(App::env('RUN_QUEUE_AUTOMATICALLY') ?? false)
+    ->headlessMode(App::env('HEADLESS_MODE') ?? true)
 ;
