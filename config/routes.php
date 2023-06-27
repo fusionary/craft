@@ -9,4 +9,6 @@
  * https://craftcms.com/docs/4.x/routing.html
  */
 
-return [];
+return [
+    'graphql' => 'graphql/api'
+];
