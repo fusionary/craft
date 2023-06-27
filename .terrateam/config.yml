@@ -1,0 +1,6 @@
+enabled: true
+
+default_tf_version: 1.4.6
+
+when_modified:
+  autoapply: true
