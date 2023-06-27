@@ -37,7 +37,7 @@ The best way to spin up your first project is with [DDEV](https://ddev.com/), a 
     ddev config --project-type=craftcms --docroot=web --create-docroot
 
     # Use this package as a starting point:
-    ddev composer create -y --no-scripts --repository "{\"type\":\"package\",\"package\":{\"name\":\"fusionary/craft\",\"version\":\"dev-main\",\"source\":{\"url\":\"https://github.com/fusionary/craft\",\"type\":\"git\",\"reference\":\"main\"}}}" fusionary/craft:dev-main
+    ddev composer create -y --no-cache --no-scripts --repository "{\"type\":\"package\",\"package\":{\"name\":\"fusionary/craft\",\"version\":\"dev-main\",\"source\":{\"url\":\"https://github.com/fusionary/craft\",\"type\":\"git\",\"reference\":\"main\"}}}" fusionary/craft:dev-main
 
     # Run the Craft CMS installer (use all defaults):
     ddev craft install
