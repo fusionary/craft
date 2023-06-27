@@ -39,11 +39,16 @@ The best way to spin up your first project is with [DDEV](https://ddev.com/), a 
     # Use this package as a starting point:
     ddev composer create -y --no-cache --no-scripts --repository "{\"type\":\"package\",\"package\":{\"name\":\"fusionary/craft\",\"version\":\"dev-main\",\"source\":{\"url\":\"https://github.com/fusionary/craft\",\"type\":\"git\",\"reference\":\"main\"}}}" fusionary/craft:dev-main
 
-    # Run the Craft CMS installer (use all defaults):
-    ddev craft install
+    # Set security key and app ID:
+    ddev craft setup/security-key
+    ddev craft setup/app-id
+
+    # Launch web app to run the Craft CMS installer:
+    ddev launch
+    # Change url to admin `/cp/install`
 
     # Install distributed plugins
-    craft plugin/install --all
+    ddev craft plugin/install --all
     ```
 4. Run `ddev launch` to open the project in your browser.
 
