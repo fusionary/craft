@@ -41,6 +41,9 @@ The best way to spin up your first project is with [DDEV](https://ddev.com/), a 
 
     # Run the Craft CMS installer (use all defaults):
     ddev craft install
+
+    # Install distributed plugins
+    craft plugin/install --all
     ```
 4. Run `ddev launch` to open the project in your browser.
 
