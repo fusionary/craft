@@ -1,0 +1,13 @@
+name: ClickUp Automation Action
+
+on:
+  pull_request:
+    types: [opened, closed]
+
+jobs:
+  update-clickup-task:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: fusionary/clickup-github-automations@main
+      with:
+        api_key: ${{ secrets.CLICKUP_API_KEY }}
