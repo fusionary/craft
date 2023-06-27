@@ -6,10 +6,10 @@
 # Common #
 #~~~~~~~~#
 
-data "aws_caller_identity" "aws_caller_identity_client" {}
+data "aws_caller_identity" "this" {}
 
 locals {
-  account_id = data.aws_caller_identity.aws_caller_identity_client.account_id
+  account_id = data.aws_caller_identity.this.account_id
 
   cloudfront_cache_optimized_policy_id  = "658327ea-f89d-4fab-a63d-7e88639e58f6" # This is a managed policy provided by AWS
   cloudfront_response_headers_policy_id = "eaab4381-ed33-4a86-88ca-d9558dc6cd63" # This is a managed policy provided by AWS
