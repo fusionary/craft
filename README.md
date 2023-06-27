@@ -18,7 +18,7 @@ __Psst!__ Looking for the Craft source code? Need to file a bug report or featur
 
 This repository is a bare-bones [Composer](https://getcomposer.org/) “project,” intended for use with the `composer create-project` command. It contains only the folders and files absolutely required to run Craft.
 
-> **Note**  
+> **Note**
 > Our [tutorial](https://craftcms.com/docs/getting-started-tutorial/) covers this setup process in greater depth. If you get stuck, give it a once-over; if things still aren’t clicking, help is never far away in [our community](https://craftcms.com/community) or via [official support](https://craftcms.com/support-services).
 >
 > You can also find these instructions (and some other helpful tips) in [the documentation](https://craftcms.com/docs/4.x/installation.html).
@@ -37,18 +37,18 @@ The best way to spin up your first project is with [DDEV](https://ddev.com/), a 
     ddev config --project-type=craftcms --docroot=web --create-docroot
 
     # Use this package as a starting point:
-    ddev composer create -y --no-scripts craftcms/craft
+    ddev composer create -y --no-scripts --repository "{\"type\":\"package\",\"package\":{\"name\":\"fusionary/craft\",\"version\":\"dev-main\",\"source\":{\"url\":\"https://github.com/fusionary/craft\",\"type\":\"git\",\"reference\":\"main\"}}}" fusionary/craft:dev-main
 
     # Run the Craft CMS installer (use all defaults):
     ddev craft install
     ```
 4. Run `ddev launch` to open the project in your browser.
 
-Craft’s [control panel](https://craftcms.com/docs/4.x/control-panel.html) is located at `/admin`. The rest is up to you! Pick up where we left off in [the tutorial](https://craftcms.com/docs/getting-started-tutorial/configure/control-panel.html), or dive right in on modeling your own content:
+Craft’s [control panel](https://craftcms.com/docs/4.x/control-panel.html) is located at `/cp`. The rest is up to you! Pick up where we left off in [the tutorial](https://craftcms.com/docs/getting-started-tutorial/configure/control-panel.html), or dive right in on modeling your own content:
 - :card_file_box: [Elements](https://craftcms.com/docs/4.x/elements.html): Learn about Craft’s core content types, and how to customize them.
 - :triangular_ruler: [Fields](https://craftcms.com/docs/4.x/fields.html): Create precisely the data structure and authoring experience you need.
 - :pencil2: [Templating](https://craftcms.com/docs/4.x/dev/twig-primer.html): Start using your data in a totally custom front-end.
 
 ## Resources
 
-Craft comes with a ton of official and community [resources](https://github.com/craftcms/cms#resources). 
+Craft comes with a ton of official and community [resources](https://github.com/craftcms/cms#resources).
