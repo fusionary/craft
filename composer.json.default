@@ -1,14 +1,6 @@
 {
   "require": {
-    "craftcms/aws-s3": "^2.0.3",
-    "craftcms/ckeditor": "^3.4.0",
     "craftcms/cms": "^4.4.0",
-    "imarc/craft-pickture": "^1.1.5",
-    "nystudio107/craft-imageoptimize": "^4.0.5",
-    "nystudio107/craft-retour": "^4.1.12",
-    "nystudio107/craft-seomatic": "^4.0.28",
-    "sebastianlenz/linkfield": "^2.1.5",
-    "spicyweb/craft-quick-field": "^2.0",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
